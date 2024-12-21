@@ -248,3 +248,140 @@
 [EVENT] [21/déc./2024:17:01:53] [PHP_HANDLER] Finished processing PHP file and sent output.
 [EVENT] [21/déc./2024:17:01:53] [PHP_HANDLER] Temporary file ./1734789713196.php deleted.
 [EVENT] [21/déc./2024:17:02:01] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:21:35:37] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:35:50] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:50] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:35:50] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:35:50] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:35:50] "GET /favicon.ico HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:50] "GET /favicon.ico HTTP/1.1" 200 0 "-" "-"
+[EVENT] [21/déc./2024:21:35:50] [SEND_RESPONSE] Sent response: HTTP/1.1 404 Not Found File Not Found
+127.0.0.1 - - [21/déc./2024:21:35:50] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/favicon.ico HTTP/1.1" 404 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:53] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:53] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:35:53] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:35:53] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:56] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:35:56] "POST /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php HTTP/1.1" 200 9 "-" "-"
+[EVENT] [21/déc./2024:21:35:56] [PHP_HANDLER] Processing PHP file: /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php with params: n1=2&n2=5
+[EVENT] [21/déc./2024:21:35:56] [PHP_HANDLER] Temporary PHP file created: ./1734806156971.php
+[EVENT] [21/déc./2024:21:35:57] [PHP_HANDLER] Sent response headers.
+[EVENT] [21/déc./2024:21:35:57] [PHP_HANDLER] Finished processing PHP file and sent output.
+[EVENT] [21/déc./2024:21:35:57] [PHP_HANDLER] Temporary file ./1734806156971.php deleted.
+[EVENT] [21/déc./2024:21:36:05] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:21:36:22] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:36:33] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:36:33] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:36:33] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:36:33] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:36:36] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:36:36] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:36:36] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:36:36] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:36:39] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:36:39] "POST /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php HTTP/1.1" 200 9 "-" "-"
+[EVENT] [21/déc./2024:21:36:39] [PHP_HANDLER] Processing PHP file: /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php with params: n1=5&n2=2
+[EVENT] [21/déc./2024:21:36:39] [PHP_HANDLER] Temporary PHP file created: ./1734806199231.php
+[EVENT] [21/déc./2024:21:36:39] [PHP_HANDLER] Sent response headers.
+[EVENT] [21/déc./2024:21:36:39] [PHP_HANDLER] Finished processing PHP file and sent output.
+[EVENT] [21/déc./2024:21:36:39] [PHP_HANDLER] Temporary file ./1734806199231.php deleted.
+[EVENT] [21/déc./2024:21:37:01] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:21:37:21] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:37:30] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:30] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:37:30] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:37:30] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:37:30] "GET /favicon.ico HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:30] "GET /favicon.ico HTTP/1.1" 200 0 "-" "-"
+[EVENT] [21/déc./2024:21:37:30] [SEND_RESPONSE] Sent response: HTTP/1.1 404 Not Found File Not Found
+127.0.0.1 - - [21/déc./2024:21:37:30] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/favicon.ico HTTP/1.1" 404 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:32] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:32] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:37:32] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:37:32] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:37] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:37:37] "POST /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php HTTP/1.1" 200 9 "-" "-"
+[EVENT] [21/déc./2024:21:37:37] [PHP_HANDLER] Processing PHP file: /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php with params: n1=5&n2=5
+[EVENT] [21/déc./2024:21:37:37] [PHP_HANDLER] Temporary PHP file created: ./1734806257695.php
+[EVENT] [21/déc./2024:21:37:37] [PHP_HANDLER] Sent response headers.
+[EVENT] [21/déc./2024:21:37:37] [PHP_HANDLER] Finished processing PHP file and sent output.
+[EVENT] [21/déc./2024:21:37:37] [PHP_HANDLER] Temporary file ./1734806257695.php deleted.
+[EVENT] [21/déc./2024:21:37:48] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:21:38:59] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:39:10] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:39:10] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:39:10] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:39:10] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:39:15] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:39:15] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:39:15] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:39:15] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:39:20] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:39:20] "POST /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php HTTP/1.1" 200 9 "-" "-"
+[EVENT] [21/déc./2024:21:39:20] [PHP_HANDLER] Processing PHP file: /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php with params: n1=9&n2=3
+[EVENT] [21/déc./2024:21:39:20] [PHP_HANDLER] Temporary PHP file created: ./1734806360835.php
+[EVENT] [21/déc./2024:21:39:20] [PHP_HANDLER] Sent response headers.
+[EVENT] [21/déc./2024:21:39:20] [PHP_HANDLER] Finished processing PHP file and sent output.
+[EVENT] [21/déc./2024:21:39:20] [PHP_HANDLER] Temporary file ./1734806360835.php deleted.
+[EVENT] [21/déc./2024:21:49:02] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:49:21] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:49:21] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:49:21] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:49:21] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+[EVENT] [21/déc./2024:21:53:30] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:21:53:47] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:53:47] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:53:47] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:21:53:47] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:53:50] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:53:50] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:21:53:50] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:21:53:50] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:21:53:55] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+[EVENT] [21/déc./2024:21:53:55] [ERROR] Php not activated error
+[EVENT] [21/déc./2024:21:53:55] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+[EVENT] [21/déc./2024:22:03:11] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:22:05:51] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:22:06:02] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:22:06:02] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:22:06:02] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:22:06:02] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:22:06:04] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:22:06:04] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:22:06:04] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:22:06:04] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:22:06:10] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+[EVENT] [21/déc./2024:22:06:10] [ERROR] Php not activated error
+[EVENT] [21/déc./2024:22:06:10] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+[EVENT] [21/déc./2024:22:54:33] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:23:14:55] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:23:15:09] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:09] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:23:15:09] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:23:15:09] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:23:15:11] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:11] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:23:15:11] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:23:15:11] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:14] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+[EVENT] [21/déc./2024:23:15:14] [ERROR] Php not activated error
+[EVENT] [21/déc./2024:23:15:14] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+[EVENT] [21/déc./2024:23:15:21] [SHUTDOWN] Server shut down successfully.
+[EVENT] [21/déc./2024:23:15:38] [STARTUP] Server started successfully.
+127.0.0.1 - - [21/déc./2024:23:15:51] "GET / HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:51] "GET / HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:23:15:51] [LISTING] listing for path: /
+[EVENT] [21/déc./2024:23:15:51] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:23:15:53] "GET /somme HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:53] "GET /somme HTTP/1.1" 200 4096 "-" "-"
+[EVENT] [21/déc./2024:23:15:53] [SEND_RESPONSE] Sent response: HTTP/1.1 200 OK
+127.0.0.1 - - [21/déc./2024:23:15:53] "GET /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/index.html HTTP/1.1" 200 1307 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:56] "POST /somme/add.php HTTP/1.1" 200 0 "-" "-"
+127.0.0.1 - - [21/déc./2024:23:15:56] "POST /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php HTTP/1.1" 200 9 "-" "-"
+[EVENT] [21/déc./2024:23:15:56] [PHP_HANDLER] Processing PHP file: /home/sarobidy/Documents/ITU/reseaux/httpserverOK/htdocs/somme/add.php with params: n1=1&n2=1
+[EVENT] [21/déc./2024:23:15:56] [PHP_HANDLER] Temporary PHP file created: ./1734812156726.php
+[EVENT] [21/déc./2024:23:15:56] [PHP_HANDLER] Sent response headers.
+[EVENT] [21/déc./2024:23:15:56] [PHP_HANDLER] Finished processing PHP file and sent output.
+[EVENT] [21/déc./2024:23:15:56] [PHP_HANDLER] Temporary file ./1734812156726.php deleted.
+[EVENT] [21/déc./2024:23:17:31] [STARTUP] Server started successfully.
+[EVENT] [21/déc./2024:23:17:32] [SHUTDOWN] Server shut down successfully.

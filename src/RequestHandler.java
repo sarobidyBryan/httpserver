@@ -12,10 +12,12 @@ public  class RequestHandler extends Thread {
     public Socket socket;
     String rootDirectory;
     private String currentDirectory = "/";
+    private boolean isPhpActive;
 
-    public RequestHandler(Socket socket,String rootDirectory) {
+    public RequestHandler(Socket socket,String rootDirectory,boolean isPhpActive) {
         this.socket = socket;
         this.rootDirectory = rootDirectory;
+        this.isPhpActive = isPhpActive;
     }
 
     @Override
@@ -55,7 +57,13 @@ public  class RequestHandler extends Thread {
     public void getRequestHandler(BufferedReader bufferedReader, String filePath, OutputStream outputStream, String[] correctFilepath) throws IOException {
         String requestedPath = correctFilepath[0]; 
         String completePath = rootDirectory + requestedPath; 
-    
+        if(completePath.endsWith(".php")){
+            if(!isPhpActive){
+                String errorPhp = phpNotActivated();
+                sendResponse(outputStream, "HTTP/1.1 200 OK", "text/html", errorPhp.getBytes());
+                return;
+            }
+        }
         File requestedFile = new File(completePath);
         if (requestedFile.isDirectory()) {
             currentDirectory = requestedPath.endsWith("/") ? requestedPath : requestedPath + "/";
@@ -68,8 +76,12 @@ public  class RequestHandler extends Thread {
         if (file.isDirectory()) {
             File indexPhp = new File(file, "index.php");
             File indexHtml = new File(file, "index.html");
-    
             if (indexPhp.exists()) {
+                if(!isPhpActive){
+                    String errorPhp = phpNotActivated();
+                    sendResponse(outputStream, "HTTP/1.1 200 OK", "text/html", errorPhp.getBytes());
+                    return;
+                }
                 phpHandler(indexPhp.getPath(), outputStream);
                 return;
             }
@@ -85,6 +97,11 @@ public  class RequestHandler extends Thread {
         }
   
         if (filePath.endsWith(".php")) {
+            if(!isPhpActive){
+                String errorPhp = phpNotActivated();
+                sendResponse(outputStream, "HTTP/1.1 200 OK", "text/html", errorPhp.getBytes());
+                return;
+            }
             if (correctFilepath.length > 1) {
                 String params = correctFilepath[1];
                 phpHandler(completePath, params, outputStream, "GET");
@@ -99,6 +116,17 @@ public  class RequestHandler extends Thread {
     
     
     public void postRequestHandler(BufferedReader bufferedReader, String filePath, OutputStream outputStream) throws IOException {
+        System.out.println("activated  "+ isPhpActive);
+        if(!isPhpActive){
+            String errorPhp = phpNotActivated();
+            sendResponse(outputStream, "HTTP/1.1 200 OK", "text/html", errorPhp.getBytes());
+            return;
+        }
+        if(!isPhpActive){
+            String errorPhp = phpNotActivated();
+            sendResponse(outputStream, "HTTP/1.1 200 OK", "text/html", errorPhp.getBytes());
+            return;
+        }
         int contentLength = 0;
         String line;
    
@@ -296,5 +324,13 @@ public  class RequestHandler extends Thread {
         Logger.logEvent("LISTING", "listing for path: " + requestPath);
         return html.toString();
     }
+
+    private String phpNotActivated(){
+        System.out.println("phppppp");
+        StringBuilder html = new StringBuilder("<html><body><h1>Php is not activated </h1><p>Please activate php in your configuration</p></body></html>");
+        Logger.logEvent("ERROR", "Php not activated error");
+        return html.toString();
+    }
+
 
 }

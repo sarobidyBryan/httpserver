@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Configuration {
     public int port;
     public String rootDirectory;
-    public String logPath;
+    public String php;
     private final String confPath = "../conf/serverhttp.conf";
 
     public Configuration() {
@@ -26,8 +26,9 @@ public class Configuration {
                         case "rootDirectory":
                             this.rootDirectory = value;
                             break;
-                        case "logPath":
-                            this.logPath = value;
+                        case "php":
+                            this.php = value;
+                            System.out.println(this.php);
                             break;
                     }
                 }
@@ -45,7 +46,7 @@ public class Configuration {
         return rootDirectory;
     }
 
-    public String getLogPath() {
-        return logPath;
+    public String getPhp() {
+        return php;
     }
 }

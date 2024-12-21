@@ -15,17 +15,29 @@ public class HttpServer {
     private ServerSocket serverSocket;
     private ExecutorService threadPool;
     private final AtomicBoolean running;
+    private String php;
 
-    public HttpServer(int port, String rootDirectory) {
+    public HttpServer() {
+        Configuration conf = new Configuration();
+        int port = conf.getPort();
+        String rootDirectory = conf.getRootDirectory();
+        String php = conf.getPhp();
+
         this.port = port;
         this.rootDirectory = rootDirectory;
         this.running = new AtomicBoolean(false);
         this.threadPool = Executors.newCachedThreadPool();  
+        this.php = php;
     }
 
     public void start() {
         if (!running.get()) {
             try {
+                boolean isPhpActive = true;
+                if(php.equals("false")){
+                    isPhpActive = false;
+                }
+                System.out.println("activate php ao am httpserver " + isPhpActive);
                 serverSocket = new ServerSocket(port);
                 running.set(true); 
 
@@ -39,7 +51,7 @@ public class HttpServer {
                     try {
                         Socket clientSocket = serverSocket.accept();
 
-                        threadPool.execute(new RequestHandler(clientSocket, rootDirectory));
+                        threadPool.execute(new RequestHandler(clientSocket, rootDirectory,isPhpActive));
                     } catch (IOException e) {
                         if (running.get()) {
                             Logger.logInternalError("Error accepting client connection: " + e.getMessage());
